@@ -1,47 +1,46 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
 
-# Folder config file
-Desktop.ini
+# Python bytecode
+*.pyc
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Weight files
+bin/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Sample image data
+sample_img/*.jpg
+!sample_img/sample_*.jpg
+sample_img/out/*
 
-# Windows shortcuts
-*.lnk
+# Annotated test results
+results/
 
-# =========================
-# Operating System Files
-# =========================
+# Intermediate training data
+backup/
+tfnet/yolo/parse-history.txt
+tfnet/yolo/*.parsed
+*.txt
+!requirements*.txt
+*.pb
+/profile
+/test.py
 
-# OSX
-# =========================
+# Built cython files
+darkflow/cython_utils/*.pyd
+darkflow/cython_utils/*.c
 
-.DS_Store
-.AppleDouble
-.LSOverride
+#egg-info
+darkflow.egg-info/
 
-# Thumbnails
-._*
+#Other build stuff
+build/
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+#TensorBoard logs
+summary/
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+#Built graphs
+built_graph/
+
+#Training checkpoints
+ckpt/*
+
+#pytest cache
+.cache/
